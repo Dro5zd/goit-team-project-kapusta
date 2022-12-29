@@ -45,14 +45,14 @@ export const App = () => {
                 .catch(() => toast.error('Error'));
 
             if (location.pathname === '/') {
-                location.pathname = '/goit-team-project-react-kapusta/home';
+                location.pathname = '/goit-team-project-kapusta/home';
                 /*eslint-enable */
             }
         }
     }, [accessToken]);
 
     return (
-        <BrowserRouter basename="goit-team-project-react-kapusta">
+        <BrowserRouter basename="goit-team-project-kapusta">
             <div>
                 <Loader isLoading={isLoading || isLoadingTrx}/>
                 <GlobalStyle/>
